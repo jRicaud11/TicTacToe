@@ -5,6 +5,7 @@
 body {
     margin: 0;
 }
+
 /* Creates variables for easier measurment*/
 :root {
     --cell : 100px;
@@ -111,4 +112,41 @@ body {
     height: calc(var(--mark) * .75);
     width: calc(var(--mark) * .75);
     background-color: white;
+}
+
+.win__prompt {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.show {
+    display: flex;
+}
+
+.win__message {
+    color: white;
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.rematch__button { 
+    font-size: 3rem;
+    padding: .25em .5em;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.rematch__button:hover {
+    background-color: green;
+    color: white;
 }
